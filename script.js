@@ -11,7 +11,7 @@ let inputData = "";
 //number page defoult
 let page = 1;
 
-let searchImages = async function () {
+const searchImages = async function () {
     inputData = inputEl.value;
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${accessKey}`;
   
